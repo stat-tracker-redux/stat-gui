@@ -4,6 +4,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 * {
   font-family: 'Kanit', sans-serif;
+  color: white;
 }
 
 
@@ -15,6 +16,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 body {
+  background-color: #171417;
   padding: 0;
 }
 
@@ -22,13 +24,19 @@ body {
 .header,
 .marketing,
 .footer {
+
   padding-left: 15px;
   padding-right: 15px;
 }
 
 /* Custom page header */
+.navbar-header,
+.navbar-default {
+  background-color: #171417;
+  border: 0px;
+}
+
 .header {
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
@@ -51,16 +59,6 @@ body {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
 
 /* Supporting marketing content */
 .marketing {
@@ -75,6 +73,46 @@ body {
   font-weight: 700;
   color: white;
 }
+
+/* Responsive: Signin Signup */
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border: 0px;
+  border-bottom: 5px solid #171417;
+  border-radius: 0px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin .btn {
+  border-radius: 0px;
+}
+
+
+
+
+
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
