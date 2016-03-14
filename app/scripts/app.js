@@ -46,6 +46,6 @@ angular
         controllerAs: 'act'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/landing'
       });
   });

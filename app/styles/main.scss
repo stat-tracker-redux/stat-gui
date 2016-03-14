@@ -1,6 +1,8 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "_landing.scss";
+@import "_login.scss";
 // endbower
 * {
   font-family: 'Kanit', sans-serif;
@@ -31,7 +33,7 @@ body {
 
 /* Custom page header */
 .navbar-header,
-.navbar-default {
+.navbar-inverse {
   background-color: #171417;
   border: 0px;
 }
@@ -74,40 +76,6 @@ body {
   color: white;
 }
 
-/* Responsive: Signin Signup */
-.form-signin {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
-}
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
-}
-.form-signin .checkbox {
-  font-weight: normal;
-}
-.form-signin .form-control {
-  position: relative;
-  height: auto;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
-  border: 0px;
-  border-bottom: 5px solid #171417;
-  border-radius: 0px;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-
-.form-signin .btn {
-  border-radius: 0px;
-}
-
-
 
 
 
@@ -116,9 +84,9 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+  // .container {
+  //   max-width: 730px;
+  // }
 
   /* Remove the padding we set earlier */
   .header,
