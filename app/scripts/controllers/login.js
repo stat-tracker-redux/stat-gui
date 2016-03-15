@@ -8,10 +8,12 @@
  * Controller of the statApp
  */
 angular.module('statApp')
-  .controller('LoginCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('LoginCtrl', function ($http) {
+    var login = this;
+    login.user = {}
+
+    login.submit =  function (){
+      
+    }
+
   });
